@@ -62,13 +62,37 @@ document.addEventListener('DOMContentLoaded', function () {
     faders.forEach(function (el) { el.classList.add('visible'); });
   }
 
-  // Contact form (front-end only — no backend wired up)
+  // Contact form → Formspree (AJAX submit, stays on page)
   var form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      alert('תודה! ההודעה נשלחה. שירי תחזור אליך בהקדם.');
-      form.reset();
+      var btn = form.querySelector('button[type="submit"]');
+      var btnText = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'שולחת...'; }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          alert('תודה! ההודעה נשלחה. שירי תחזור אליך בהקדם.');
+          form.reset();
+        } else {
+          res.json().then(function (data) {
+            var msg = (data && data.errors) ? data.errors.map(function (x) { return x.message; }).join(', ')
+                                            : 'אירעה שגיאה בשליחה. נסי שוב או צרי קשר בוואטסאפ.';
+            alert(msg);
+          }).catch(function () {
+            alert('אירעה שגיאה בשליחה. נסי שוב או צרי קשר בוואטסאפ.');
+          });
+        }
+      }).catch(function () {
+        alert('אירעה שגיאה בשליחה. בדקי את החיבור לאינטרנט ונסי שוב.');
+      }).finally(function () {
+        if (btn) { btn.disabled = false; btn.textContent = btnText; }
+      });
     });
   }
 });

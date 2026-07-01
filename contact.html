@@ -50,7 +50,7 @@
         <p>לא משנה אם מדובר בשאלה קטנה, בקשת מידע, או שכבר מחליטה להתקדם — כתבי לי ואחזור אליך בהקדם.</p>
 
         <div class="contact-item">
-          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
           <div class="contact-item-text">
             <span>וואטסאפ — הדרך המהירה ביותר</span>
             <a href="https://wa.me/972544818126" target="_blank" rel="noopener">054-4818126</a>
@@ -97,7 +97,9 @@
         <div class="contact-form">
           <h3>שלחי הודעה</h3>
           <p class="text-mid" style="margin-bottom:24px;font-size:14px;">אחזור אליך תוך יום עסקים</p>
-          <form id="contactForm">
+          <form id="contactForm" action="https://formspree.io/f/mkolqjwv" method="POST">
+            <input type="hidden" name="_subject" value="פנייה חדשה מהאתר — שירי זנו">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-row">
               <div class="form-group">
                 <label for="fullName">שם מלא *</label>
@@ -109,8 +111,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="email">אימייל</label>
-              <input type="email" id="email" name="email">
+              <label for="email">אימייל *</label>
+              <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
               <label for="interest">במה את מתעניינת?</label>
@@ -130,7 +132,12 @@
               <label for="message">ספרי לי קצת *</label>
               <textarea id="message" name="message" required></textarea>
             </div>
+            <label class="consent-check">
+              <input type="checkbox" id="marketingConsent" name="marketingConsent">
+              <span>אני מסכימה לקבל משירי זנו עדכונים, תוכן מקצועי, הצעות לשירותים והטבות באמצעות דוא״ל, SMS או WhatsApp. ניתן להסיר את ההסכמה בכל עת.</span>
+            </label>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">שלחי הודעה</button>
+            <p class="consent-note">בלחיצה על "שלחי הודעה" אני מאשרת כי קראתי את <a href="privacy.html">מדיניות הפרטיות</a>, וכי המידע שמסרתי ישמש ליצירת קשר עמי ומתן השירות. אם אסמן את תיבת ההסכמה, אני מסכימה גם לקבל עדכונים ותוכן מקצועי בהתאם למדיניות הפרטיות.</p>
           </form>
         </div>
       </div>
@@ -144,7 +151,7 @@
       <div class="fade-in text-center" style="font-size:80px;">⏰</div>
       <div class="fade-in delay-1">
         <h3>שיחת היכרות — ללא עלות, ללא התחייבות</h3>
-        <p class="text-mid">לפני שמתחילים, מציעה שיחת היכרות קצרה (15–20 דקות) לגמרי בחינם. נדבר על המצב, אענה על שאלות ראשוניות, ונחליט יחד אם ואיך להמשיך — בלי שום לחץ.</p>
+        <p class="text-mid">לפני שמתחילים, אני מציעה שנעלה לשיחת היכרות קצרה (15–20 דקות) לגמרי בחינם. נדבר על המצב, אענה על שאלות ראשוניות, ונחליט יחד אם ואיך להמשיך — בלי שום לחץ.</p>
       </div>
     </div>
   </div>
@@ -170,9 +177,7 @@
         <p class="footer-tagline">יועצת שינה מוסמכת ומדריכת הנקה.<br>כאן כדי ללוות אתכן לשינה טובה ולהנקה מוצלחת.</p>
         <div class="footer-social">
           <a href="https://wa.me/972544818126" aria-label="וואטסאפ" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" aria-label="אינסטגרם"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="טיקטוק"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/shirysass/" aria-label="אינסטגרם" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -187,14 +192,15 @@
       </div>
       <div class="footer-col">
         <h4>יצירת קשר</h4>
+        <a class="footer-contact-item" href="https://wa.me/972544818126" target="_blank" rel="noopener" style="text-decoration:none;"><i class="fab fa-whatsapp"></i> כתבו לי בוואטסאפ</a>
         <div class="footer-contact-item"><i class="fas fa-phone"></i> 054-4818126</div>
         <div class="footer-contact-item"><i class="fas fa-envelope"></i> shiry.sasson@gmail.com</div>
         <div class="footer-contact-item"><i class="fas fa-clock"></i> א׳–ה׳ | 9:00–21:00</div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 שירי זנו | כל הזכויות שמורות</span>
-      <span>עוצב עם ❤️</span>
+      <span>© 2026 שירי זנו | כל הזכויות שמורות</span>
+      <span><a href="privacy.html">מדיניות פרטיות</a></span>
     </div>
   </div>
 </footer>
