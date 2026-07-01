@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>צור קשר | שירי - יועצת שינה ומדריכת הנקה</title>
+<meta name="description" content="צרי קשר עם שירי — יועצת שינה ומדריכת הנקה. שיחת היכרות ראשונית ללא עלות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-name">שירי זנו</span>
+      <span class="logo-title">יועצת שינה ומדריכת הנקה</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">דף הבית</a>
+      <a href="about.html">אודות</a>
+      <a href="sleep.html">שינה</a>
+      <a href="breastfeeding.html">הנקה</a>
+      <a href="services.html">השירותים שלי</a>
+      <a href="contact.html" class="btn-nav">צור קשר</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="תפריט">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-spacer"></div>
+
+<section class="page-hero lavender">
+  <div class="container">
+    <span class="tag tag-lavender">בואי נדבר</span>
+    <h1>צרי קשר 💬</h1>
+    <p class="lead">שיחת היכרות ראשונית ללא עלות — ספרי לי מה קורה ואני כאן בשבילך</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <span class="tag tag-lavender">פרטי התקשרות</span>
+        <h2>אשמח לשמוע ממך</h2>
+        <p>לא משנה אם מדובר בשאלה קטנה, בקשת מידע, או שכבר מחליטה להתקדם — כתבי לי ואחזור אליך בהקדם.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <span>וואטסאפ — הדרך המהירה ביותר</span>
+            <a href="https://wa.me/972544818126" target="_blank" rel="noopener">054-4818126</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-item-text">
+            <span>טלפון</span>
+            <a href="tel:0544818126">054-4818126</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <span>אימייל</span>
+            <a href="mailto:shiry.sasson@gmail.com">shiry.sasson@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-item-text">
+            <span>שעות פעילות</span>
+            <strong>א׳–ה׳ | 9:00–21:00</strong>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item-text">
+            <span>אזור פעילות</span>
+            <strong>כל הארץ — ייעוץ מרחוק וביקורי בית</strong>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://wa.me/972544818126" class="social-link whatsapp" target="_blank" rel="noopener" aria-label="וואטסאפ"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link instagram" aria-label="אינסטגרם"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link facebook" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link tiktok" aria-label="טיקטוק"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="fade-in delay-1">
+        <div class="contact-form">
+          <h3>שלחי הודעה</h3>
+          <p class="text-mid" style="margin-bottom:24px;font-size:14px;">אחזור אליך תוך יום עסקים</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">שם מלא *</label>
+                <input type="text" id="fullName" name="fullName" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">טלפון *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">אימייל</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="interest">במה את מתעניינת?</label>
+              <select id="interest" name="interest">
+                <option value="">בחרי שירות...</option>
+                <option value="sleep">ייעוץ שינה</option>
+                <option value="breastfeeding">ייעוץ הנקה</option>
+                <option value="full">חבילת ליווי מלאה (שינה + הנקה)</option>
+                <option value="other">אחר / שאלה כללית</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="childAge">גיל התינוק / הילד</label>
+              <input type="text" id="childAge" name="childAge">
+            </div>
+            <div class="form-group">
+              <label for="message">ספרי לי קצת *</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">שלחי הודעה</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="feature-grid" style="align-items:center;">
+      <div class="fade-in text-center" style="font-size:80px;">⏰</div>
+      <div class="fade-in delay-1">
+        <h3>שיחת היכרות — ללא עלות, ללא התחייבות</h3>
+        <p class="text-mid">לפני שמתחילים, מציעה שיחת היכרות קצרה (15–20 דקות) לגמרי בחינם. נדבר על המצב, אענה על שאלות ראשוניות, ונחליט יחד אם ואיך להמשיך — בלי שום לחץ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container">
+    <div class="cta-banner fade-in">
+      <h2>מעדיפה וואטסאפ? 📱</h2>
+      <p>לחצי כאן ושלחי הודעה ישירות — אני עונה מהר</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/972544818126?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A9%D7%99%D7%A8%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%A0%D7%AA%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9A" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> שלחי הודעה בוואטסאפ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <span class="logo-name">שירי זנו</span>
+        <p class="footer-tagline">יועצת שינה מוסמכת ומדריכת הנקה.<br>כאן כדי ללוות אתכן לשינה טובה ולהנקה מוצלחת.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/972544818126" aria-label="וואטסאפ" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="אינסטגרם"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="פייסבוק"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="טיקטוק"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ניווט</h4>
+        <div class="footer-links-list">
+          <a href="about.html">אודות</a>
+          <a href="sleep.html">שינה</a>
+          <a href="breastfeeding.html">הנקה</a>
+          <a href="services.html">השירותים שלי</a>
+          <a href="contact.html">צור קשר</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>יצירת קשר</h4>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i> 054-4818126</div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i> shiry.sasson@gmail.com</div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i> א׳–ה׳ | 9:00–21:00</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 שירי זנו | כל הזכויות שמורות</span>
+      <span>עוצב עם ❤️</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
